@@ -34,7 +34,10 @@ const Dashboard = () => {
             <li>
               <Link to="registros-incapacidad">Registros de Incapacidades</Link>
             </li>
+            
           )}
+          
+         
         </ul>
         {/* Botón de Cerrar Sesión */}
         <button className="logout-btn" onClick={handleLogout}>Cerrar Sesión</button>
@@ -56,6 +59,8 @@ const Dashboard = () => {
             <Link to="incapacidad">Ver más</Link>
           </div>
 
+          
+
           {/* Mostrar la tarjeta de "Registros de Incapacidades" solo si el usuario es admin */}
           {userRole === 'admin' && (
             <div className="card">
@@ -64,17 +69,18 @@ const Dashboard = () => {
               <Link to="registros-incapacidad">Ver más</Link>
             </div>
             
+            
                     )}
-          {/* Mostrar la tarjeta de "Registros de Incapacidades" solo si el usuario es admin */}
+        
           {userRole === 'admin' && (
             <div className="card">
-              <h3>Empleados</h3>
-              <p>Registra nuevos empleados aquí</p>
-              <Link to="registrar-empleado">Ver más</Link> {/* Aquí va la ruta para la página de registro */}
-            </div>
+              <h3>Lista Empleados</h3>
+              <p>Aca puedes ver la lista de los empleados</p>
+              <Link to="lista-empleados">Ver más</Link>
+              </div>
           )}
 
- 
+          
           
         </div>
 

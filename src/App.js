@@ -6,7 +6,9 @@ import Dashboard from './pages/Dashboard';
 import HoraLlegada from './pages/HoraLlegadas';
 import Incapacidad from './pages/Incapacidad';
 import RegistrosIncapacidad from './pages/RegistrosIncapacidad';
-import RegistrarEmpleados from './pages/RegistrarEmpleados';
+import ListaEmpleados from './pages/ListaEmpleados';
+import EditarEmpleado from './pages/EditarEmpleado';
+
 import './App.css';
 
 function HomePage() {
@@ -70,7 +72,9 @@ function App() {
           <Route path="hora-llegada" element={<HoraLlegada />} />
           <Route path="incapacidad" element={<Incapacidad />} />
           <Route path="registros-incapacidad" element={<RegistrosIncapacidad />} />
-          <Route path="registrar-empleado" element={<RegistrarEmpleados />} />
+          <Route path="lista-empleados" element={<ListaEmpleados />} /> {/* Ruta para la lista de empleados */}
+          <Route path="editar-empleado" element={<EditarEmpleado />} />
+
         </Route>
 
         <Route path="/empleado/dashboard" element={<Dashboard />}>
